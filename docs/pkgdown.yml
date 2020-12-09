@@ -1,0 +1,12 @@
+pandoc: 2.7.3
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  challenges/SpatialDE: SpatialDE.html
+  challenges/template: template.html
+  challenges/visualization: visualization.html
+last_built: 2020-12-09T17:11Z
+urls:
+  reference: https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/reference
+  article: https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/articles
+

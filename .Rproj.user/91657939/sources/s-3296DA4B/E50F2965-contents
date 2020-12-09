@@ -1,6 +1,0 @@
----
-title: "BiocSpatialChallenges"
-output: html_document
----
-
-The goal of `BiocSpatialChallenges` is to host challenges contributed by and for the Bioconductor community in the context of spatially resolved data.
