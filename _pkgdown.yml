@@ -1,0 +1,11 @@
+url: https://drighelli.github.io/EuroBioc2020_SpatialWorkshop
+
+template:
+  params:
+    bootswatch: simplex
+    ganalytics: UA-93043521-1
+
+navbar:
+  right:
+    - icon: fa-github
+      href: https://github.com/helenalc/BiocSpatialChallenges

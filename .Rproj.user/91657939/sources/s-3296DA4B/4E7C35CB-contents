@@ -1,0 +1,26 @@
+---
+title: "SpatialDE"
+author: 
+  - name: Helena L. Crowell
+    affiliation: University of Zurich
+    email: helena.crowell@uzh.ch
+---
+
+# Leader(s)
+
+- [Lukas M. Weber](https://github.com/lmweber)
+
+# Difficulty & duration
+
+- intermediate-advanced
+- less than a week
+
+# Abstract
+
+`SpatialDE` by [Svensson et al.](https://doi.org/10.1038/nmeth.4636) is a method to identify genes with spatial patterns of expression variation from spatially resolved transcriptomics data. However, the method is currently only implemented as a Python package (see https://github.com/Teichlab/SpatialDE).
+
+# Targets
+
+- implement `SpatialDE` in R for the `SpatialExperiment` class, *from scratch*  
+or using `r BiocStyle::CRANpkg("reticulate")` to wrap around the original Python implementation
+- the resulting function(s) could become part of https://github.com/lmweber/spatzli

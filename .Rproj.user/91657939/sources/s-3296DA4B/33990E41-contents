@@ -1,0 +1,30 @@
+---
+title: "Visualization"
+author: 
+  - name: Helena L. Crowell
+    affiliation: University of Zurich
+    email: helena.crowell@uzh.ch
+---
+
+# Leader(s)
+
+- [Helena L. Crowell](https://github.com/helenalc)
+
+# Difficulty & duration
+
+- intermediate
+- a couple weeks
+
+# Abstract
+
+With newly developed Bioc infrastructure for spatially resolved data in place, namely, the `r BiocStyle::Biocpkg("SpatialExperiment")`, there's a need to support flexible (and pretty!) visualization. To this end, we hope to develop (and, in the future, build on) the `ggspatial` package to provide a visualization suite for the `SpatialExperiment` class and its friends. 
+
+# Targets
+
+The package should support, but needn't be limited to, the following
+
+- coloring by assay data (e.g. feature expression)
+- coloring by observation metadata (e.g. sample, total counts)
+- control over whether or not to include an image layer
+- plotting multiple samples and/or variables side by side
+- ...
