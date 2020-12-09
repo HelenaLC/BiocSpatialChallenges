@@ -6,6 +6,6 @@ While infrastructure and workflows for spatial transcriptomics data analysis are
 
 # Structure
 
-- Each challenge is a stand-alonge `.Rmd` file, located in the `vignettes/challenges` directory
+- Each challenge is a stand-alone `.Rmd` file, located in the `vignettes/challenges` directory
 - Challenges are rated at one of three levels of difficulty: novice, intermidate, advanced
 - Ideally, a challenge should be linked to a GitHub issue in an already existent package/repository
