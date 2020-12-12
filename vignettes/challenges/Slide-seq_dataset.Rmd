@@ -1,0 +1,57 @@
+---
+title: "Slide-seq dataset"
+author: 
+  - name: Lukas M. Weber
+    affilitation: Johns Hopkins Bloomberg School of Public Health
+    email: lukas.weber@jhu.edu
+---
+
+# Leader(s)
+
+[Lukas Weber](https://lmweber.org)
+
+
+# Difficulty & duration
+
+- intermediate to advanced
+- tier 1 (dataset): 1-2 days
+- tier 2 (workflow): 1-2 weeks
+
+
+# Abstract
+
+Our aim is to select several examples of spatially resolved transcriptomics datasets from different platforms, format them into [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) objects, and collect them in the [SpaData](https://github.com/lmweber/SpaData) package.
+
+[SpaData](https://github.com/lmweber/SpaData) is currently under development on GitHub, and will be submitted to Bioconductor as an ExperimentHub package. These datasets can then be easily loaded by users and developers, e.g. for use in examples, workflow, and tutorials.
+
+Currently, the [SpaData](https://github.com/lmweber/SpaData) package contains the following datasets:
+
+- Human DLPFC (10x Genomics Visium): One sample of human brain from the dorsolateral prefrontal cortex (DLPFC) region, spanning the six cortical layers and white matter. Sourced from our publication [Maynard and Collado-Torres et al. 2020](https://www.biorxiv.org/content/10.1101/2020.02.28.969931v1).
+- Mouse coronal (10x Genomics Visium): One sample of mouse brain, coronal section, spanning one hemisphere. Sourced from [10x Genomics](https://support.10xgenomics.com/spatial-gene-expression/datasets/1.1.0/V1_Adult_Mouse_Brain).
+
+These existing objects are from the 10x Genomics Visium platform. To make the [SpaData](https://github.com/lmweber/SpaData) package and our example workflows more broadly applicable, we would like to add additional datasets from other platforms.
+
+
+# Targets
+
+There are two targets in this challenge. The main target is the Tier 1 target. If there is interest and capacity, we can continue with the Tier 2 target.
+
+## Tier 1 target
+
+- Identify a suitable publicly available dataset from published literature using the Slide-seqV2 platform ([Stickels et al. 2020](https://www.nature.com/articles/s41587-020-0739-1))
+- Download the dataset and format it into a `SpatialExperiment` object
+- Write a reproducible script for generating the `SpatialExperiment` object, following the guidelines for ExperimentHub packages
+- Add the object to the [SpaData](https://github.com/lmweber/SpaData) package
+
+
+## Tier 2 target
+
+We are also compiling examples of analysis workflows for each dataset, which will be added to an online textbook under development (Orchestrating Spatial Transcriptomics Analysis with Bioconductor, or OSTA).
+
+If a suitable dataset has been selected under Tier 1, we can continue by writing a complete analysis workflow in RMarkdown format, which can later be added to the OSTA book.
+
+
+# To do
+
+[to do: add links to issues in repos]
+
