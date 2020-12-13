@@ -1,0 +1,37 @@
+---
+title: "iSEE Module for SpatialExperiment"
+author: 
+  - name: Dario Righelli
+    affilitation: University of Padova
+    email: dario.righelli@gmail.com
+---
+
+# Leader(s)
+
+- [Dario Righelli](https://github.com/drighelli)
+
+# Difficulty & duration
+
+- intermediate
+- duration depends on numbers of issues to account for (see Targets)
+
+# Abstract
+
+briefly describe the challenge's motivation and context
+
+# Targets
+
+summarize specific targets for the challenge, e.g.
+
+- implement an iSEE module for 
+[SpatialExperiment](https://bioconductor.org/packages/SpatialExperiment) class 
+by aid of visualization functions present into the visualization package.
+-- the visualization functions can be retrived from the visualization module (i.e. [ggspatial](https://helenalc.github.io/BiocSpatialChallenges/articles/challenges/visualization.html))
+- refer to [iSEE book](https://isee.github.io/iSEE-book/) to implement the module
+- the module should provide also a report of made analysis steps 
+-- refer to packages for implementing Reproducible Research in R (i.e.
+[easyreporting](https://bioconductor.org/packages/easyreporting/))
+- Other possible implementation in such a module could be 
+-- Analysing procedures coming from other external packages
+-- datasets explorations/loading (such as the ones coming from [SpaData](https://github.com/lmweber/SpaData))
+spatial data.
