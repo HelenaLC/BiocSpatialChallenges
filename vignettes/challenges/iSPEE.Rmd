@@ -1,5 +1,5 @@
 ---
-title: "iSEE Module for SpatialExperiment"
+title: "iSEE Module"
 author: 
   - name: Dario Righelli
     affilitation: University of Padova
