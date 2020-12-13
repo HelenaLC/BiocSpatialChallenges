@@ -1,12 +1,15 @@
-pandoc: 2.7.3
+pandoc: 2.3.1
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
+  challenges/Slide-seq_dataset: Slide-seq_dataset.html
   challenges/SpatialDE: SpatialDE.html
+  challenges/iSPEE: iSPEE.html
+  challenges/seqFISH_dataset: seqFISH_dataset.html
   challenges/template: template.html
   challenges/visualization: visualization.html
-last_built: 2020-12-09T17:11Z
+last_built: 2020-12-13T15:53Z
 urls:
-  reference: https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/reference
-  article: https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/articles
+  reference: https://helenalc.github.io/BiocSpatialChallenges//reference
+  article: https://helenalc.github.io/BiocSpatialChallenges//articles
 

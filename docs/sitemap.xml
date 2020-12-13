@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/index.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//index.html</loc>
   </url>
   <url>
-    <loc>https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/articles/challenges/SpatialDE.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/Slide-seq_dataset.html</loc>
   </url>
   <url>
-    <loc>https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/articles/challenges/template.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/SpatialDE.html</loc>
   </url>
   <url>
-    <loc>https://drighelli.github.io/EuroBioc2020_SpatialWorkshop/articles/challenges/visualization.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/iSPEE.html</loc>
+  </url>
+  <url>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/seqFISH_dataset.html</loc>
+  </url>
+  <url>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/template.html</loc>
+  </url>
+  <url>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/visualization.html</loc>
   </url>
 </urlset>
