@@ -3,7 +3,7 @@ Type: Package
 Title: Challenges for EuroBioc2020 Birds-of-a-Feather workshop on spatially resolved transcriptomics
 Version: 0.1.0
 Author: Helena Crowell, Lukas Weber, Dario Righelli
-Maintainer: Helena L. Crowell
+Maintainer: Helena L. Crowell <helena.crowell@uzh.ch>
 Description: Challenges for EuroBioc2020 Birds-of-a-Feather workshop on spatially resolved transcriptomics
 License: MIT
 Encoding: UTF-8

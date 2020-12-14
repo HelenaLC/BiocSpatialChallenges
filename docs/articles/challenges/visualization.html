@@ -60,19 +60,25 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../../articles/challenges/Slide-seq_dataset.html">Slide-seq dataset</a>
+      <a href="../../articles/challenges/SPE_molecule_based.html">SpatialExperiment: molecule-based data</a>
     </li>
     <li>
       <a href="../../articles/challenges/SpatialDE.html">SpatialDE</a>
     </li>
     <li>
-      <a href="../../articles/challenges/iSPEE.html">iSEE Module</a>
+      <a href="../../articles/challenges/datasets_Slide-seqV2.html">Datasets: Slide-seqV2</a>
     </li>
     <li>
-      <a href="../../articles/challenges/seqFISH_dataset.html">seqFISH dataset</a>
+      <a href="../../articles/challenges/datasets_Visium_tissues.html">Datasets: Visium additional tissues</a>
     </li>
     <li>
-      <a href="../../articles/challenges/template.html">Template</a>
+      <a href="../../articles/challenges/datasets_multi_sample.html">Datasets: multi-sample</a>
+    </li>
+    <li>
+      <a href="../../articles/challenges/datasets_seqFISH.html">Datasets: seqFISH</a>
+    </li>
+    <li>
+      <a href="../../articles/challenges/iSEE.html">iSEE Module</a>
     </li>
     <li>
       <a href="../../articles/challenges/visualization.html">Visualization</a>
@@ -97,7 +103,7 @@
 
       
 
-      </header><link href="visualization_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
+      </header><script src="visualization_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="visualization_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
 <script src="visualization_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
@@ -133,12 +139,14 @@
 <div id="abstract" class="section level1">
 <h1 class="hasAnchor">
 <a href="#abstract" class="anchor"></a>Abstract</h1>
-<p>With newly developed Bioc infrastructure for spatially resolved data in place, namely, the <em><a href="https://bioconductor.org/packages/3.12/SpatialExperiment">SpatialExperiment</a></em>, there’s a need to support flexible (and pretty!) visualization. To this end, we hope to develop (and, in the future, build on) the <code>ggspatial</code> package to provide a visualization suite for the <code>SpatialExperiment</code> class and its friends.</p>
+<p>With newly developed Bioconductor infrastructure for spatially resolved transcriptomics data in place, namely, the <em><a href="https://bioconductor.org/packages/3.12/SpatialExperiment">SpatialExperiment</a></em>, there’s a need to support flexible (and pretty!) visualization. To this end, we hope to develop (and, in the future, build on) the <code>ggspavis</code> package to provide a visualization suite for the <code>SpatialExperiment</code> class and its friends.</p>
+<p>Currently, we have developed several set of visualization functions separately, including in the <a href="https://github.com/lmweber/ggspavis">ggspavis</a> package, <a href="http://bioconductor.org/packages/spatialLIBD">spatialLIBD package</a>, as well as numerous <code>RMarkdown</code> and other scripts that are not part of packages.</p>
+<p>In this challenge, we would like to consolidate these functions to make them user-friendly and easily accessible in one place. We have set up the <a href="https://github.com/lmweber/ggspavis">ggspavis</a> package for this purpose.</p>
 </div>
 <div id="targets" class="section level1">
 <h1 class="hasAnchor">
 <a href="#targets" class="anchor"></a>Targets</h1>
-<p>The package should support, but needn’t be limited to, the following</p>
+<p>The package should support, but needn’t be limited to, the following:</p>
 <ul>
 <li>coloring by assay data (e.g. feature expression)</li>
 <li>coloring by observation metadata (e.g. sample, total counts)</li>
@@ -146,6 +154,7 @@
 <li>plotting multiple samples and/or variables side by side</li>
 <li>…</li>
 </ul>
+<p>Much of this functionality already exists in our various functions. However, there is significant overlap, and each of us has implemented our functions in slightly different ways. In this challenge, we will aim to find a way to best merge these in a way that is user-friendly for end users.</p>
 </div>
   </div>
 
@@ -160,7 +169,7 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by The package maintainer.</p>
+  <p>Developed by Helena L. Crowell.</p>
 </div>
 
 <div class="pkgdown">

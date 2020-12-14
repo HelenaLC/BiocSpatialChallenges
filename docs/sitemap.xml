@@ -4,19 +4,25 @@
     <loc>https://helenalc.github.io/BiocSpatialChallenges//index.html</loc>
   </url>
   <url>
-    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/Slide-seq_dataset.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/SPE_molecule_based.html</loc>
   </url>
   <url>
     <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/SpatialDE.html</loc>
   </url>
   <url>
-    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/iSPEE.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/datasets_Slide-seqV2.html</loc>
   </url>
   <url>
-    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/seqFISH_dataset.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/datasets_Visium_tissues.html</loc>
   </url>
   <url>
-    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/template.html</loc>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/datasets_multi_sample.html</loc>
+  </url>
+  <url>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/datasets_seqFISH.html</loc>
+  </url>
+  <url>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/iSEE.html</loc>
   </url>
   <url>
     <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/visualization.html</loc>

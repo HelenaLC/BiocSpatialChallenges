@@ -1,14 +1,16 @@
-pandoc: 2.3.1
+pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
-  challenges/Slide-seq_dataset: Slide-seq_dataset.html
+  challenges/SPE_molecule_based: SPE_molecule_based.html
   challenges/SpatialDE: SpatialDE.html
-  challenges/iSPEE: iSPEE.html
-  challenges/seqFISH_dataset: seqFISH_dataset.html
-  challenges/template: template.html
+  challenges/datasets_Slide-seqV2: datasets_Slide-seqV2.html
+  challenges/datasets_Visium_tissues: datasets_Visium_tissues.html
+  challenges/datasets_multi_sample: datasets_multi_sample.html
+  challenges/datasets_seqFISH: datasets_seqFISH.html
+  challenges/iSEE: iSEE.html
   challenges/visualization: visualization.html
-last_built: 2020-12-13T16:09Z
+last_built: 2020-12-14T08:21Z
 urls:
   reference: https://helenalc.github.io/BiocSpatialChallenges//reference
   article: https://helenalc.github.io/BiocSpatialChallenges//articles
