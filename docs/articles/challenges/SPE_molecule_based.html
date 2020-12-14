@@ -139,8 +139,8 @@
 <p>One of our core aims is to finalize the <a href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a> class structure, so that users can start adopting this for their analysis workflows for data from various spatially resolved transcriptomics platforms.</p>
 <p>So far, our current development work and testing has been mainly focused on data from the <a href="https://www.10xgenomics.com/products/spatial-gene-expression">10x Genomics Visium</a> platform, which is a “spot-based” platform. (Slide-seqV2 is another spot-based platform.)</p>
 <p>We would also like to ensure that our infrastructure can be used with data from “molecule-based” platforms. The major molecule-based platforms include seqFISH (and seqFISH+) and MERFISH.</p>
-<p>In this challenge, the aim is to test and / or modify the current implementation of the <a href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a> class to ensure that it can be used to store data from molecule-based platforms.</p>
-<p>In particular, seqFISH (and other molecule-based technologies) can measure gene expression at sub-cellular resolution, which may require different data structures and analysis methods.</p>
+<p>In this challenge, the aim is to test the current implementation of the <a href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a> class to ensure that it can be used to store data from molecule-based platforms.</p>
+<p>In particular, seqFISH (and other molecule-based technologies) can measure gene expression at sub-cellular resolution. Storing this information may require some slight modifications to the <code>SpatialExperiment</code> structure. Alternatively, it may be possible to store all the additional information in <code>rowData</code> and <code>colData</code> (and retrieved with <code>spatialCoords</code>).</p>
 </div>
 <div id="targets" class="section level1">
 <h1 class="hasAnchor">
@@ -148,10 +148,11 @@
 <p>This challenge consists of:</p>
 <ul>
 <li>testing the <code>SpatialExperiment</code> class using a dataset from a molecule-based platform (e.g. seqFISH)</li>
-<li>adding any additional modifications required to the <code>SpatialExperiment</code> (e.g. for handling sub-cellular resolution)</li>
+<li>creating an example script demonstrating how to store a molecule-based dataset in a <code>SpatialExperiment</code> (see also “Datasets: seqFISH” challenge)</li>
+<li>if necessary: implement any additional modifications required to the <code>SpatialExperiment</code> class structure</li>
 </ul>
-<p>There is some overlap with the “Datasets: seqFISH” challenge (where we aim to format a seqFISH dataset as a <code>SpatialExperiment</code> object, and provide this to users in the <code>STdata</code> package).</p>
-<p>This challenge is relatively open-ended. It may be that the <a href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a> class can already handle molecule-based data quite easily (which would make it a short challenge), or alternatively significant modifications may be required (which would make it a longer challenge).</p>
+<p>Note there is some overlap with the “Datasets: seqFISH” challenge, where we aim to format a seqFISH dataset into a <code>SpatialExperiment</code> object and provide this to users in the <code>STdata</code> package.</p>
+<p>This challenge is relatively open-ended. It may be that the <code>SpatialExperiment</code> class can already handle molecule-based data quite easily (which would make it a short challenge), or alternatively some modifications to the class structure may be required (which would make it a longer challenge).</p>
 </div>
   </div>
 

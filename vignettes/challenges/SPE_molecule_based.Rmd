@@ -25,9 +25,9 @@ So far, our current development work and testing has been mainly focused on data
 
 We would also like to ensure that our infrastructure can be used with data from "molecule-based" platforms. The major molecule-based platforms include seqFISH (and seqFISH+) and MERFISH.
 
-In this challenge, the aim is to test and / or modify the current implementation of the [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class to ensure that it can be used to store data from molecule-based platforms.
+In this challenge, the aim is to test the current implementation of the [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class to ensure that it can be used to store data from molecule-based platforms.
 
-In particular, seqFISH (and other molecule-based technologies) can measure gene expression at sub-cellular resolution, which may require different data structures and analysis methods.
+In particular, seqFISH (and other molecule-based technologies) can measure gene expression at sub-cellular resolution. Storing this information may require some slight modifications to the `SpatialExperiment` structure. Alternatively, it may be possible to store all the additional information in `rowData` and `colData` (and retrieved with `spatialCoords`).
 
 
 # Targets
@@ -35,9 +35,10 @@ In particular, seqFISH (and other molecule-based technologies) can measure gene 
 This challenge consists of:
 
 - testing the `SpatialExperiment` class using a dataset from a molecule-based platform (e.g. seqFISH)
-- adding any additional modifications required to the `SpatialExperiment` (e.g. for handling sub-cellular resolution)
+- creating an example script demonstrating how to store a molecule-based dataset in a `SpatialExperiment` (see also "Datasets: seqFISH" challenge)
+- if necessary: implement any additional modifications required to the `SpatialExperiment` class structure
 
-There is some overlap with the "Datasets: seqFISH" challenge (where we aim to format a seqFISH dataset as a `SpatialExperiment` object, and provide this to users in the `STdata` package).
+Note there is some overlap with the "Datasets: seqFISH" challenge, where we aim to format a seqFISH dataset into a `SpatialExperiment` object and provide this to users in the `STdata` package.
 
-This challenge is relatively open-ended. It may be that the [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class can already handle molecule-based data quite easily (which would make it a short challenge), or alternatively significant modifications may be required (which would make it a longer challenge).
+This challenge is relatively open-ended. It may be that the `SpatialExperiment` class can already handle molecule-based data quite easily (which would make it a short challenge), or alternatively some modifications to the class structure may be required (which would make it a longer challenge).
 
