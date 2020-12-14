@@ -1,8 +1,8 @@
 # Motivation
 
-The goal of `BiocSpatialChallenges` is to host challenges contributed by and for the Bioconductor community in the context of spatially resolved data.
+The goal of `BiocSpatialChallenges` is to host challenges contributed by and for the Bioconductor community in the context of spatially resolved transcriptomics data.
 
-While infrastructure and workflows for spatial transcriptomics data analysis are already available elsewhere, we hope to develop tools that interact nicely with already existent Bioconductor infrastructure - as a community! 
+While infrastructure and workflows for spatially resolved transcriptomics data analysis are already available elsewhere, we hope to develop tools that interact nicely with already existent Bioconductor infrastructure - as a community!
 
 # Structure
 
@@ -11,4 +11,5 @@ While infrastructure and workflows for spatial transcriptomics data analysis are
 - Ideally, a challenge should be linked to a GitHub issue in an already existent package/repository
 
 # Website
+
 - link to pkgdown website: https://helenalc.github.io/BiocSpatialChallenges
