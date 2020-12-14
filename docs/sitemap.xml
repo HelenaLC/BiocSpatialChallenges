@@ -16,9 +16,6 @@
     <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/datasets_Visium_tissues.html</loc>
   </url>
   <url>
-    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/datasets_multi_assay.html</loc>
-  </url>
-  <url>
     <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/datasets_multi_sample.html</loc>
   </url>
   <url>
@@ -26,6 +23,9 @@
   </url>
   <url>
     <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/iSEE.html</loc>
+  </url>
+  <url>
+    <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/multi_assay_data.html</loc>
   </url>
   <url>
     <loc>https://helenalc.github.io/BiocSpatialChallenges//articles/challenges/visualization.html</loc>
