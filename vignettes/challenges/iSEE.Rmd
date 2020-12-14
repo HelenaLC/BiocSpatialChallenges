@@ -33,5 +33,5 @@ by aid of visualization functions present into the visualization package.
 [easyreporting](https://bioconductor.org/packages/easyreporting/))
 - Other possible implementation in such a module could be 
 -- Analysing procedures coming from other external packages
--- datasets explorations/loading (such as the ones coming from [SpaData](https://github.com/lmweber/SpaData))
+-- datasets explorations/loading (such as the ones coming from [STdata](https://github.com/lmweber/STdata))
 spatial data.
