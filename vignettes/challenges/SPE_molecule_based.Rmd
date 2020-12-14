@@ -1,0 +1,43 @@
+---
+title: "SpatialExperiment: molecule-based data"
+author: 
+  - name: Lukas M. Weber
+    affilitation: Johns Hopkins Bloomberg School of Public Health
+    email: lukas.weber@jhu.edu
+---
+
+# Leader(s)
+
+[Dario Righelli](https://github.com/drighelli)
+
+
+# Difficulty & duration
+
+- difficulty: advanced
+- duration: 1-2 weeks
+
+
+# Abstract
+
+One of our core aims is to finalize the [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class structure, so that users can start adopting this for their analysis workflows for data from various spatially resolved transcriptomics platforms.
+
+So far, our current development work and testing has been mainly focused on data from the [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) platform, which is a "spot-based" platform. (Slide-seqV2 is another spot-based platform.)
+
+We would also like to ensure that our infrastructure can be used with data from "molecule-based" platforms. The major molecule-based platforms include seqFISH (and seqFISH+) and MERFISH.
+
+In this challenge, the aim is to test and / or modify the current implementation of the [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class to ensure that it can be used to store data from molecule-based platforms.
+
+In particular, seqFISH (and other molecule-based technologies) can measure gene expression at sub-cellular resolution, which may require different data structures and analysis methods.
+
+
+# Targets
+
+This challenge consists of:
+
+- testing the `SpatialExperiment` class using a dataset from a molecule-based platform (e.g. seqFISH)
+- adding any additional modifications required to the `SpatialExperiment` (e.g. for handling sub-cellular resolution)
+
+There is some overlap with the "Datasets: seqFISH" challenge (where we aim to format a seqFISH dataset as a `SpatialExperiment` object, and provide this to users in the `STdata` package).
+
+This challenge is relatively open-ended. It may be that the [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class can already handle molecule-based data quite easily (which would make it a short challenge), or alternatively significant modifications may be required (which would make it a longer challenge).
+
