@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iSEE Module • BiocSpatialChallenges</title>
+<title>Datasets: multi-assay • BiocSpatialChallenges</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/simplex/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../../bootstrap-toc.css">
 <script src="../../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../../pkgdown.css" rel="stylesheet">
-<script src="../../pkgdown.js"></script><meta property="og:title" content="iSEE Module">
+<script src="../../pkgdown.js"></script><meta property="og:title" content="Datasets: multi-assay">
 <meta property="og:description" content="BiocSpatialChallenges">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -106,18 +106,18 @@
 
       
 
-      </header><script src="iSEE_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="iSEE_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
-<script src="iSEE_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
+      </header><script src="datasets_multi_assay_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="datasets_multi_assay_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
+<script src="datasets_multi_assay_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>iSEE Module</h1>
-                        <h4 class="author">Dario Righelli</h4>
-                  <a class="author_email" href="mailto:#"></a><a href="mailto:dario.righelli@gmail.com" class="email">dario.righelli@gmail.com</a>
+      <h1 data-toc-skip>Datasets: multi-assay</h1>
+                        <h4 class="author">Lukas M. Weber</h4>
+                  <a class="author_email" href="mailto:#"></a><a href="mailto:lukas.weber@jhu.edu" class="email">lukas.weber@jhu.edu</a>
       
                   
       
       
-      <div class="hidden name"><code>iSEE.Rmd</code></div>
+      <div class="hidden name"><code>datasets_multi_assay.Rmd</code></div>
 
     </div>
 
@@ -134,25 +134,35 @@
 <h1 class="hasAnchor">
 <a href="#difficulty-duration" class="anchor"></a>Difficulty &amp; duration</h1>
 <ul>
-<li>intermediate</li>
-<li>duration depends on numbers of issues to account for (see Targets)</li>
+<li>difficulty: intermediate</li>
+<li>duration: 1-2 days</li>
 </ul>
 </div>
 <div id="abstract" class="section level1">
 <h1 class="hasAnchor">
 <a href="#abstract" class="anchor"></a>Abstract</h1>
-<p>briefly describe the challenge’s motivation and context</p>
+<p>Our current aims are:</p>
+<ul>
+<li>Finalize <a href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a> class structure by creating and testing example datasets from several technological platforms (to be collected in <a href="https://github.com/lmweber/STdata">STdata</a> package)</li>
+<li>Adapt visualization functions for data from each platform (to be collected in <a href="https://github.com/lmweber/ggspavis">ggspavis</a> package)</li>
+<li>Create a short analysis workflow using one of the example datasets from each platform</li>
+</ul>
+<p>This will allow us to build an integrated Bioconductor-based infrastructure for analyzing spatially resolved transcriptomics data. Ultimately, this will all be showcased in our <a href="https://github.com/lmweber/OSTA-base">OSTA</a> online book.</p>
+<p>So far, we have mainly worked with data from the <a href="https://www.10xgenomics.com/products/spatial-gene-expression">10x Genomics Visium</a> platform. The <a href="https://github.com/lmweber/STdata">STdata</a> package (under development) currently contains two example datasets from the Visium platform (human DLPFC and mouse coronal).</p>
+<p>In the future, we will also increasingly expect multi-omics spatial data to be generated, e.g. <a href="https://www.10xgenomics.com/products/spatial-proteomics">spatial transcriptomics and protein co-detection</a>.</p>
+<p>In this challenge, we aim to test whether multi-omics spatial data can be stored in <code>SpatialExperiment</code> objects, and/or whether additional modifications to the class are required. In particular, we can re-use the <a href="https://bioconductor.org/packages/release/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html#5_Adding_alternative_feature_sets">altExp</a> functionality from <code>SingleCellExperiment</code>. Alternatively, it may be possible that we eventually need to develop a new class, extending <a href="http://bioconductor.org/packages/MultiAssayExperiment">MultiAssayExperiment</a>.</p>
 </div>
 <div id="targets" class="section level1">
 <h1 class="hasAnchor">
 <a href="#targets" class="anchor"></a>Targets</h1>
-<p>summarize specific targets for the challenge, e.g.</p>
+<p>This challenge consists of:</p>
 <ul>
-<li>implement an iSEE module for <a href="https://bioconductor.org/packages/SpatialExperiment">SpatialExperiment</a> class by aid of visualization functions present into the visualization package. – the visualization functions can be retrived from the visualization module (i.e. <a href="https://helenalc.github.io/BiocSpatialChallenges/articles/challenges/visualization.html">ggspatial</a>)</li>
-<li>refer to <a href="https://isee.github.io/iSEE-book/">iSEE book</a> to implement the module</li>
-<li>the module should provide also a report of made analysis steps – refer to packages for implementing Reproducible Research in R (i.e. <a href="https://bioconductor.org/packages/easyreporting/">easyreporting</a>)</li>
-<li>Other possible implementation in such a module could be – Analysing procedures coming from other external packages – datasets explorations/loading (such as the ones coming from <a href="https://github.com/lmweber/STdata">STdata</a>) spatial data.</li>
+<li>selecting a multi-omics spatial dataset, e.g. from the <a href="https://www.10xgenomics.com/products/spatial-gene-expression">10x Genomics Visium</a> website</li>
+<li>writing a script to format this into a <code>SpatialExperiment</code> object, making use of the <code>altExp</code> functionality from <code>SingleCellExperiment</code>
+</li>
+<li>discuss whether additional functionality from <a href="http://bioconductor.org/packages/MultiAssayExperiment">MultiAssayExperiment</a> may be required for storing this data</li>
 </ul>
+<p>This challenge is relatively open-ended, and may include some group discussion on the best choice of class structure for multi-omics spatial data.</p>
 </div>
   </div>
 

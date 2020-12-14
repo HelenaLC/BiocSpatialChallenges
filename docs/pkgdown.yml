@@ -6,11 +6,12 @@ articles:
   challenges/SpatialDE: SpatialDE.html
   challenges/datasets_Slide-seqV2: datasets_Slide-seqV2.html
   challenges/datasets_Visium_tissues: datasets_Visium_tissues.html
+  challenges/datasets_multi_assay: datasets_multi_assay.html
   challenges/datasets_multi_sample: datasets_multi_sample.html
   challenges/datasets_seqFISH: datasets_seqFISH.html
   challenges/iSEE: iSEE.html
   challenges/visualization: visualization.html
-last_built: 2020-12-14T14:12Z
+last_built: 2020-12-14T14:21Z
 urls:
   reference: https://helenalc.github.io/BiocSpatialChallenges//reference
   article: https://helenalc.github.io/BiocSpatialChallenges//articles

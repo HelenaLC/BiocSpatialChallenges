@@ -1,0 +1,46 @@
+---
+title: "Datasets: multi-assay"
+author: 
+  - name: Lukas M. Weber
+    affilitation: Johns Hopkins Bloomberg School of Public Health
+    email: lukas.weber@jhu.edu
+---
+
+# Leader(s)
+
+- [Dario Righelli](https://github.com/drighelli)
+
+
+# Difficulty & duration
+
+- difficulty: intermediate
+- duration: 1-2 days
+
+
+# Abstract
+
+Our current aims are:
+
+- Finalize [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class structure by creating and testing example datasets from several technological platforms (to be collected in [STdata](https://github.com/lmweber/STdata) package)
+- Adapt visualization functions for data from each platform (to be collected in [ggspavis](https://github.com/lmweber/ggspavis) package)
+- Create a short analysis workflow using one of the example datasets from each platform
+
+This will allow us to build an integrated Bioconductor-based infrastructure for analyzing spatially resolved transcriptomics data. Ultimately, this will all be showcased in our [OSTA](https://github.com/lmweber/OSTA-base) online book.
+
+So far, we have mainly worked with data from the [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) platform. The [STdata](https://github.com/lmweber/STdata) package (under development) currently contains two example datasets from the Visium platform (human DLPFC and mouse coronal).
+
+In the future, we will also increasingly expect multi-omics spatial data to be generated, e.g. [spatial transcriptomics and protein co-detection](https://www.10xgenomics.com/products/spatial-proteomics).
+
+In this challenge, we aim to test whether multi-omics spatial data can be stored in `SpatialExperiment` objects, and/or whether additional modifications to the class are required. In particular, we can re-use the [altExp](https://bioconductor.org/packages/release/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html#5_Adding_alternative_feature_sets) functionality from `SingleCellExperiment`. Alternatively, it may be possible that we eventually need to develop a new class, extending [MultiAssayExperiment](http://bioconductor.org/packages/MultiAssayExperiment).
+
+
+# Targets
+
+This challenge consists of:
+
+- selecting a multi-omics spatial dataset, e.g. from the [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) website
+- writing a script to format this into a `SpatialExperiment` object, making use of the `altExp` functionality from `SingleCellExperiment`
+- discuss whether additional functionality from [MultiAssayExperiment](http://bioconductor.org/packages/MultiAssayExperiment) may be required for storing this data
+
+This challenge is relatively open-ended, and may include some group discussion on the best choice of class structure for multi-omics spatial data.
+

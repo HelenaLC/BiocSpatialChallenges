@@ -8,7 +8,7 @@ author:
 
 # Leader(s)
 
-[Dario Righelli](https://github.com/drighelli)
+- [Dario Righelli](https://github.com/drighelli)
 
 
 # Difficulty & duration
