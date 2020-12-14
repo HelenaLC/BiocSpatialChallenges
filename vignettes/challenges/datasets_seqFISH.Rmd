@@ -8,7 +8,7 @@ author:
 
 # Leader(s)
 
-[Lukas Weber](https://lmweber.org)
+- [Lukas Weber](https://lmweber.org)
 
 
 # Difficulty & duration
