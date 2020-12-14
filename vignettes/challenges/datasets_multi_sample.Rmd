@@ -47,7 +47,9 @@ As a starting point, we can use the `make-data.R` scripts from the existing obje
 - https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-mouse-coronal.R
 - https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-human-DLPFC.R
 
-One good option may be to use some of the additional samples from the human DLPFC dataset from our paper ([Maynard and Collado-Torres et al. 2020](https://www.biorxiv.org/content/10.1101/2020.02.28.969931v1)). Currently, we have used sample 151673 from this dataset for the "human DLPFC" dataset in the `STdata` package.
+One good option may be to use some of the additional samples from the human DLPFC dataset from our paper ([Maynard and Collado-Torres et al. 2020](https://www.biorxiv.org/content/10.1101/2020.02.28.969931v1)). Currently, we have used sample 151673 from this dataset for the "human DLPFC" dataset in the `STdata` package. However, we would also be interested to find out if there are any other suitable publicly available multi-sample datasets, either from Visium or other platforms.
 
-However, we would also be interested to find out if there are any other suitable publicly available multi-sample datasets, either from Visium or other platforms.
+Also, as a possible extension to this challenge, we could consider:
+
+- creating a set of scripts to load *all* Visium datasets from the [10x Genomics Visium](https://www.10xgenomics.com/resources/datasets/) website (10 datasets in total), formatting these as `SpatialExperiments`, and re-distributing them as an additional data package (similar to the existing [TENxPBMCData](https://bioconductor.org/packages/TENxPBMCData) dataset for single-cell data)
 

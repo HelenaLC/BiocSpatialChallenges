@@ -40,7 +40,7 @@ In this set of "Dataset" challenges, we will aim to select and prepare several a
 
 seqFISH and seqFISH+ ([Eng et al. 2019](https://www.nature.com/articles/s41586-019-1049-y)) are molecule-based spatially resolved transcriptomics platforms. These platforms allow measuring expression of hundreds to thousands of genes, with sub-cellular resolution. For an example of a recent paper using this technology, see [Lohoff and Ghazanfar et al. 2020](https://www.biorxiv.org/content/10.1101/2020.11.20.391896v1).
 
-Compared to Visium, the sub-cellular resolution of this technology allows capturing very different types of information, which requires different data structures and analysis methods.
+Compared to Visium, the sub-cellular resolution of this technology allows capturing very different types of information, which may also require some slight modifications to the `SpatialExperiment` class structure (see also "SpatialExperiment: molecule-based data" challenge).
 
 
 # Targets
@@ -59,6 +59,8 @@ As a starting point, we can use the `make-data.R` scripts from the existing obje
 
 - https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-mouse-coronal.R
 - https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-human-DLPFC.R
+
+Note there is some overlap with the "SpatialExperiment: molecule-based data" challenge, where we aim to ensure that the `SpatialExperiment` class can be used to correctly store seqFISH (or other molecule-based) data, using an example dataset as a test case.
 
 
 *Tier 2 (workflow)*

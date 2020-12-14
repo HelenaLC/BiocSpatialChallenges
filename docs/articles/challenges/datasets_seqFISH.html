@@ -154,7 +154,7 @@
 <p>So far, we have mainly worked with data from the <a href="https://www.10xgenomics.com/products/spatial-gene-expression">10x Genomics Visium</a> platform. The <a href="https://github.com/lmweber/STdata">STdata</a> package (under development) currently contains two example datasets from the Visium platform (human DLPFC and mouse coronal).</p>
 <p>In this set of “Dataset” challenges, we will aim to select and prepare several additional datasets for demonstration and testing purposes.</p>
 <p>seqFISH and seqFISH+ (<a href="https://www.nature.com/articles/s41586-019-1049-y">Eng et al. 2019</a>) are molecule-based spatially resolved transcriptomics platforms. These platforms allow measuring expression of hundreds to thousands of genes, with sub-cellular resolution. For an example of a recent paper using this technology, see <a href="https://www.biorxiv.org/content/10.1101/2020.11.20.391896v1">Lohoff and Ghazanfar et al. 2020</a>.</p>
-<p>Compared to Visium, the sub-cellular resolution of this technology allows capturing very different types of information, which requires different data structures and analysis methods.</p>
+<p>Compared to Visium, the sub-cellular resolution of this technology allows capturing very different types of information, which may also require some slight modifications to the <code>SpatialExperiment</code> class structure (see also “SpatialExperiment: molecule-based data” challenge).</p>
 </div>
 <div id="targets" class="section level1">
 <h1 class="hasAnchor">
@@ -172,6 +172,7 @@
 <li><a href="https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-mouse-coronal.R" class="uri">https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-mouse-coronal.R</a></li>
 <li><a href="https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-human-DLPFC.R" class="uri">https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-human-DLPFC.R</a></li>
 </ul>
+<p>Note there is some overlap with the “SpatialExperiment: molecule-based data” challenge, where we aim to ensure that the <code>SpatialExperiment</code> class can be used to correctly store seqFISH (or other molecule-based) data, using an example dataset as a test case.</p>
 <p><em>Tier 2 (workflow)</em></p>
 <p>If there is interest and capacity, we could then continue with the Tier 2 challenge:</p>
 <ul>
