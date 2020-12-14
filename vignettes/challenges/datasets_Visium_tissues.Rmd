@@ -1,0 +1,49 @@
+---
+title: "Datasets: Visium additional tissues"
+author: 
+  - name: Lukas M. Weber
+    affilitation: Johns Hopkins Bloomberg School of Public Health
+    email: lukas.weber@jhu.edu
+---
+
+# Leader(s)
+
+[Lukas Weber](https://lmweber.org)
+
+
+# Difficulty & duration
+
+- difficulty: intermediate
+- duration: 1-2 days
+
+
+# Abstract
+
+Our current aims are:
+
+- Finalize [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class structure by creating and testing example datasets from several technological platforms (to be collected in [STdata](https://github.com/lmweber/STdata) package)
+- Adapt visualization functions for data from each platform (to be collected in [ggspavis](https://github.com/lmweber/ggspavis) package)
+- Create a short analysis workflow using one of the example datasets from each platform
+
+This will allow us to build an integrated Bioconductor-based infrastructure for analyzing spatially resolved transcriptomics data. Ultimately, this will all be showcased in our [OSTA](https://github.com/lmweber/OSTA-base) online book.
+
+So far, we have mainly worked with data from the [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) platform. The [STdata](https://github.com/lmweber/STdata) package (under development) currently contains two example datasets from the Visium platform (human DLPFC and mouse coronal).
+
+In this set of "Dataset" challenges, we will aim to select and prepare several additional datasets for demonstration and testing purposes.
+
+Our existing Visium datasets are from brain tissue (mouse and human). However, datasets from other tissues are also available from the [10x Genomics website](https://www.10xgenomics.com/resources/datasets/). These could be used for additional examples, and would be more easily accessible for users if we make them available as `SpatialExperiment` objects.
+
+
+# Targets
+
+This challenge consists of:
+
+- choosing one or more of the additional Visium datasets from the [10x Genomics website](https://www.10xgenomics.com/resources/datasets/) (e.g. from different tissues)
+- formatting them into `SpatialExperiment` objects
+- creating reproducible scripts to create the objects from the raw data files, saving the objects, and adding these to the `STdata` package
+
+As a starting point, we can use the `make-data.R` scripts from the existing objects in the `STdata` package:
+
+- https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-mouse-coronal.R
+- https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-human-DLPFC.R
+

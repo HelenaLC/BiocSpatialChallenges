@@ -1,0 +1,68 @@
+---
+title: "Datasets: Slide-seqV2"
+author: 
+  - name: Lukas M. Weber
+    affilitation: Johns Hopkins Bloomberg School of Public Health
+    email: lukas.weber@jhu.edu
+---
+
+# Leader(s)
+
+[Lukas Weber](https://lmweber.org)
+
+
+# Difficulty & duration
+
+*Tier 1 (dataset)*
+
+- difficulty: intermediate
+- duration: 1-2 days
+
+*Tier 2 (workflow)*
+
+- difficulty: advanced
+- duration: 1-2 weeks
+
+
+# Abstract
+
+Our current aims are:
+
+- Finalize [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class structure by creating and testing example datasets from several technological platforms (to be collected in [STdata](https://github.com/lmweber/STdata) package)
+- Adapt visualization functions for data from each platform (to be collected in [ggspavis](https://github.com/lmweber/ggspavis) package)
+- Create a short analysis workflow using one of the example datasets from each platform
+
+This will allow us to build an integrated Bioconductor-based infrastructure for analyzing spatially resolved transcriptomics data. Ultimately, this will all be showcased in our [OSTA](https://github.com/lmweber/OSTA-base) online book.
+
+So far, we have mainly worked with data from the [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) platform. The [STdata](https://github.com/lmweber/STdata) package (under development) currently contains two example datasets from the Visium platform (human DLPFC and mouse coronal).
+
+In this set of "Dataset" challenges, we will aim to select and prepare several additional datasets for demonstration and testing purposes.
+
+Slide-seqV2 ([Stickels et al. 2020](https://www.nature.com/articles/s41587-020-0739-1)) is a spot-based spatially resolved transcriptomics platform. This platform allows measuring very large numbers of spots, although at relatively low depth (low numbers of detected genes per spot). This provides us with a slightly different test case for our Bioconductor-based infrastructure.
+
+
+# Targets
+
+This challenge consists of two tiers:
+
+*Tier 1 (dataset)*
+
+The Tier 1 challenge consists of:
+
+- selecting a suitable publicly accessible Slide-seqV2 dataset
+- formatting it into a `SpatialExperiment` object
+- creating a reproducible script to create the object from the raw data files, saving the object, and adding these to the `STdata` package
+
+As a starting point, we can use the `make-data.R` scripts from the existing objects in the `STdata` package:
+
+- https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-mouse-coronal.R
+- https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-human-DLPFC.R
+
+
+*Tier 2 (workflow)*
+
+If there is interest and capacity, we could then continue with the Tier 2 challenge:
+
+- write a complete short analysis workflow, using the `SpatialExperiment` object created in the Tier 1 challenge
+- format the analysis workflow as an RMarkdown file, which could later be integrated into the workflow chapters of our `OSTA` online book
+

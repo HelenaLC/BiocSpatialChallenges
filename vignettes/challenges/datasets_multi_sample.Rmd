@@ -1,0 +1,53 @@
+---
+title: "Datasets: multi-sample"
+author: 
+  - name: Lukas M. Weber
+    affilitation: Johns Hopkins Bloomberg School of Public Health
+    email: lukas.weber@jhu.edu
+---
+
+# Leader(s)
+
+[Lukas Weber](https://lmweber.org)
+
+
+# Difficulty & duration
+
+- difficulty: intermediate
+- duration: 1-2 days
+
+
+# Abstract
+
+Our current aims are:
+
+- Finalize [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) class structure by creating and testing example datasets from several technological platforms (to be collected in [STdata](https://github.com/lmweber/STdata) package)
+- Adapt visualization functions for data from each platform (to be collected in [ggspavis](https://github.com/lmweber/ggspavis) package)
+- Create a short analysis workflow using one of the example datasets from each platform
+
+This will allow us to build an integrated Bioconductor-based infrastructure for analyzing spatially resolved transcriptomics data. Ultimately, this will all be showcased in our [OSTA](https://github.com/lmweber/OSTA-base) online book.
+
+So far, we have mainly worked with data from the [10x Genomics Visium](https://www.10xgenomics.com/products/spatial-gene-expression) platform. The [STdata](https://github.com/lmweber/STdata) package (under development) currently contains two example datasets from the Visium platform (human DLPFC and mouse coronal).
+
+In this set of "Dataset" challenges, we will aim to select and prepare several additional datasets for demonstration and testing purposes.
+
+Our existing Visium datasets above each contain only a single sample. However, we would also like to ensure that our infrastructure can correctly handle multi-sample datasets, which we expect will become more common in the future as Visium (and other platforms) become more widely adopted. This includes the `SpatialExperiment` class as well as plotting functions.
+
+
+# Targets
+
+This challenge consists of:
+
+- selecting a suitable publicly accessible dataset containing multiple samples
+- formatting this into a `SpatialExperiment` object
+- creating a reproducible script to create the object from the raw data files, saving the object, and adding these to the `STdata` package
+
+As a starting point, we can use the `make-data.R` scripts from the existing objects in the `STdata` package:
+
+- https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-mouse-coronal.R
+- https://github.com/lmweber/STdata/blob/main/inst/scripts/make-data-human-DLPFC.R
+
+One good option may be to use some of the additional samples from the human DLPFC dataset from our paper ([Maynard and Collado-Torres et al. 2020](https://www.biorxiv.org/content/10.1101/2020.02.28.969931v1)). Currently, we have used sample 151673 from this dataset for the "human DLPFC" dataset in the `STdata` package.
+
+However, we would also be interested to find out if there are any other suitable publicly available multi-sample datasets, either from Visium or other platforms.
+
