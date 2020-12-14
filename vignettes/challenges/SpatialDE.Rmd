@@ -8,19 +8,28 @@ author:
 
 # Leader(s)
 
-- [Lukas M. Weber](https://github.com/lmweber)
+- [Lukas Weber](https://lmweber.org)
+
 
 # Difficulty & duration
 
-- intermediate-advanced
+- intermediate to advanced
 - less than a week
+
 
 # Abstract
 
-`SpatialDE` by [Svensson et al.](https://doi.org/10.1038/nmeth.4636) is a method to identify genes with spatial patterns of expression variation from spatially resolved transcriptomics data. However, the method is currently only implemented as a Python package (see https://github.com/Teichlab/SpatialDE).
+`SpatialDE` by [Svensson et al. 2018](https://www.nature.com/articles/nmeth.4636) is a method to identify spatially variable genes (SVGs) in spatially resolved transcriptomics data.
+
+We have previously used this method in our paper [Maynard and Collado-Torres et al. 2020](https://www.biorxiv.org/content/10.1101/2020.02.28.969931v1).
+
+`SpatialDE` is available as a Python package (see https://github.com/Teichlab/SpatialDE), which makes it difficult to integrate into R/Bioconductor-based workflows. In this challenge, our aim is to make `SpatialDE` accessible in R using either [reticulate](https://rstudio.github.io/reticulate/) or [basilisk](https://bioconductor.org/packages/basilisk).
+
 
 # Targets
 
-- implement `SpatialDE` in R for the `SpatialExperiment` class, *from scratch*  
-or using `r BiocStyle::CRANpkg("reticulate")` to wrap around the original Python implementation
-- the resulting function(s) could become part of https://github.com/lmweber/spatzli
+- create a wrapper for `SpatialDE` in R, using either `basilisk` or `reticulate` (`basilisk` is preferred, although the choice of which tool to use will depend on interest and experience)
+- write a short script (e.g. in `RMarkdown`) with an example workflow showing how to use the wrapper
+
+If this is successful, we can integrate this into our example workflows, e.g. in our [OSTA](https://github.com/lmweber/OSTA-base) online book currently under development.
+
