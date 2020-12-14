@@ -21,7 +21,7 @@ author:
 
 With newly developed Bioconductor infrastructure for spatially resolved transcriptomics data in place, namely, the `r BiocStyle::Biocpkg("SpatialExperiment")`, there's a need to support flexible (and pretty!) visualization. To this end, we hope to develop (and, in the future, build on) the `ggspavis` package to provide a visualization suite for the `SpatialExperiment` class and its friends.
 
-Currently, we have developed several set of visualization functions separately, including in the [ggspavis](https://github.com/lmweber/ggspavis) package, [spatialLIBD package](http://bioconductor.org/packages/spatialLIBD), as well as numerous `RMarkdown` and other scripts that are not part of packages.
+Currently, we have developed several set of visualization functions separately, including in the [ggspavis](https://github.com/lmweber/ggspavis) package, [spatialLIBD package](http://bioconductor.org/packages/spatialLIBD), as well as a number of `RMarkdown` and other scripts that are not part of packages.
 
 In this challenge, we would like to consolidate these functions to make them user-friendly and easily accessible in one place. We have set up the [ggspavis](https://github.com/lmweber/ggspavis) package for this purpose.
 
@@ -37,4 +37,6 @@ The package should support, but needn't be limited to, the following:
 - ...
 
 Much of this functionality already exists in our various functions. However, there is significant overlap, and each of us has implemented our functions in slightly different ways. In this challenge, we will aim to find a way to best merge these in a way that is user-friendly for end users.
+
+In this challenge, we can begin by setting up an `RMarkdown` script to showcase the different types of plots that we would like to produce. These can then be integrated into the functions in the `ggspavis` package.
 
