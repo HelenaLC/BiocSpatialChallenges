@@ -78,10 +78,16 @@
       <a href="../../articles/challenges/datasets_seqFISH.html">Datasets: seqFISH</a>
     </li>
     <li>
+      <a href="../../articles/challenges/graph.html">Adding graph managing to SpatialExperiment</a>
+    </li>
+    <li>
       <a href="../../articles/challenges/iSEE.html">iSEE Module</a>
     </li>
     <li>
       <a href="../../articles/challenges/multi_assay_data.html">Multi-assay data</a>
+    </li>
+    <li>
+      <a href="../../articles/challenges/template.html">Template</a>
     </li>
     <li>
       <a href="../../articles/challenges/visualization.html">Visualization</a>
@@ -106,7 +112,7 @@
 
       
 
-      </header><script src="multi_assay_data_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="multi_assay_data_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
+      </header><link href="multi_assay_data_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
 <script src="multi_assay_data_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
@@ -149,7 +155,7 @@
 </ul>
 <p>This will allow us to build an integrated Bioconductor-based infrastructure for analyzing spatially resolved transcriptomics data. Ultimately, this will all be showcased in our <a href="https://github.com/lmweber/OSTA-base">OSTA</a> online book.</p>
 <p>So far, we have mainly worked with data from the <a href="https://www.10xgenomics.com/products/spatial-gene-expression">10x Genomics Visium</a> platform. The <a href="https://github.com/lmweber/STdata">STdata</a> package (under development) currently contains two example datasets from the Visium platform (human DLPFC and mouse coronal).</p>
-<p>In the future, we will also increasingly expect multi-omics spatial data to be generated, e.g. <a href="https://www.10xgenomics.com/products/spatial-proteomics">spatial transcriptomics and protein co-detection</a>.</p>
+<p>In the future, we will also increasingly expect multi-omics spatial data to be generated, e.g. <a href="https://www.10xgenomics.com/products/spatial-proteomics">spatial transcriptomics and protein co-detection</a>.</p>
 <p>In this challenge, we aim to test whether multi-omics spatial data can be stored in <code>SpatialExperiment</code> objects, and/or whether additional modifications to the class are required. In particular, we can re-use the <a href="https://bioconductor.org/packages/release/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html#5_Adding_alternative_feature_sets">altExp</a> functionality from <code>SingleCellExperiment</code>. Alternatively, it may be possible that we eventually need to develop a new class, extending <a href="http://bioconductor.org/packages/MultiAssayExperiment">MultiAssayExperiment</a>.</p>
 </div>
 <div id="targets" class="section level1">

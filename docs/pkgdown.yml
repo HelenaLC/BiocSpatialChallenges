@@ -1,4 +1,4 @@
-pandoc: 2.7.3
+pandoc: 2.3.1
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
@@ -8,10 +8,12 @@ articles:
   challenges/datasets_Visium_tissues: datasets_Visium_tissues.html
   challenges/datasets_multi_sample: datasets_multi_sample.html
   challenges/datasets_seqFISH: datasets_seqFISH.html
+  challenges/graph: graph.html
   challenges/iSEE: iSEE.html
   challenges/multi_assay_data: multi_assay_data.html
+  challenges/template: template.html
   challenges/visualization: visualization.html
-last_built: 2020-12-14T14:34Z
+last_built: 2020-12-15T16:47Z
 urls:
   reference: https://helenalc.github.io/BiocSpatialChallenges//reference
   article: https://helenalc.github.io/BiocSpatialChallenges//articles

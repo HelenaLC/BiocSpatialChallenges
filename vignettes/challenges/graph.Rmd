@@ -1,0 +1,39 @@
+---
+title: "Adding graph managing to SpatialExperiment"
+author: 
+  - name: Dario Righelli
+    affilitation: University of Padova
+    email: dario.righelli@gmail.com
+---
+
+# Leader(s)
+
+- [Dario Righelli](https://github.com/drighelli)
+
+
+# Difficulty & duration
+
+- intermediate
+- a week
+
+
+# Abstract
+
+Molecule-based spatial data requires to build graph based data representation.
+Indeed, some packages already are developing methods for iGraph analysis, [miloR](https://github.com/MarioniLab/miloR) is for differential abundance in on KNN graph from single-cell datasets.
+
+SingleCellExperiment has `colPairs`, whose purpose is to store networks consistent 
+with stored `colnames` in the object.
+
+Open questions:
+
+- is the iGraph the best solution for achieve this scope?
+- is this representation useful also in spot-based sptaial data?
+- could this graph representation be related with polygon representation of the cells?
+
+
+# Targets
+
+- integrate graph data structure into SpatialExperiment package (if needed)
+- add methods for managing this data structure
+- 

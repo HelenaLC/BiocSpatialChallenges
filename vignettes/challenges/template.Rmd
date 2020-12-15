@@ -1,0 +1,29 @@
+---
+title: "Template"
+author: 
+  - name: Helena L. Crowell
+    affilitation: University of Zurich
+    email: helena.crowell@uzh.ch
+---
+
+# Leader(s)
+
+name those responsible to coordinating progress, submission and closing of the challenge
+
+# Difficulty & duration
+
+- novice, intermediate, advanced
+- given an estimate of the time needed to resolve the challenge
+
+# Abstract
+
+briefly describe the challenge's motivation and context
+
+# Targets
+
+summarize specific targets for the challenge, e.g.
+
+- implement a function to plot something
+- write a vignette on how to do something
+
+and (if possible) give links to a repository/package outcomes should be contributed to and/or associated any GitHub issue(s).
