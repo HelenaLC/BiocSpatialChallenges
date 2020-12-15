@@ -13,3 +13,8 @@ While infrastructure and workflows for spatially resolved transcriptomics data a
 # Website
 
 - link to pkgdown website: https://helenalc.github.io/BiocSpatialChallenges
+
+# BiocChallenges
+
+This project is inspired to the main project [BiocChallenges](https://kevinrue.github.io/BiocChallenges/) and it could be 
+merged into it in the future.
