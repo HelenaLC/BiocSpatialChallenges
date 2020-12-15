@@ -22,7 +22,7 @@ author:
 Molecule-based spatial data requires to build graph based data representation.
 Indeed, some packages already are developing methods for iGraph analysis, [miloR](https://github.com/MarioniLab/miloR) is for differential abundance in on KNN graph from single-cell datasets.
 
-SingleCellExperiment has `colPairs`, whose purpose is to store networks consistent 
+SingleCellExperiment has [`colPairs`](https://bioconductor.org/packages/devel/bioc/vignettes/SingleCellExperiment/inst/doc/intro.html#6_Storing_row_or_column_pairings), whose purpose is to store networks consistent 
 with stored `colnames` in the object.
 
 Open questions:
