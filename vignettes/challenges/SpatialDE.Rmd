@@ -33,3 +33,10 @@ We have previously used this method in our paper [Maynard and Collado-Torres et 
 
 If this is successful, we can integrate this into our example workflows, e.g. in our [OSTA](https://github.com/lmweber/OSTA-base) online book currently under development.
 
+# Github repo
+
+Davide Corso (SalesLab) in collaboration with Milan Malfait are working on this challenge, updates can be found at:
+
+https://github.com/sales-lab/spatialDEr
+
+
